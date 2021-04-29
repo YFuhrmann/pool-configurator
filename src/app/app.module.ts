@@ -13,6 +13,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
 
+import { SharedModule } from '../app/modules/shared/shared.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -25,7 +27,8 @@ import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestor
     AppRoutingModule,
     ConfiguratorModule,
     DashboardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
