@@ -1,0 +1,6 @@
+<div *ngIf="!(fireAuth.authState | async)">
+    <h1>Anmelden</h1>
+    <button mat-raised-button appGoogleSignin>
+        <span><i class="fab fa-google"></i>Login with Google</span>
+    </button>
+</div>
